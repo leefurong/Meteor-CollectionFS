@@ -111,6 +111,10 @@ $ meteor add <CFS add-on package name>
 The CollectionFS package makes available two important global variables:
 `FS.File` and `FS.Collection`.
 
+```js
+import {FS} from "meteor/cfs:base-package";
+```
+
 * An `FS.File` instance wraps a file and its data
 on the client or server. It is similar to the browser `File` object (and can be
 created from a `File` object), but it has additional properties and methods. Many of its methods are reactive when the instance is returned by a call to `find` or `findOne`.
